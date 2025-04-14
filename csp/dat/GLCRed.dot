@@ -1,0 +1,19 @@
+strict graph {
+l1234 [type=l];
+l56 [type=l];
+l78 [type=l];
+l9 [type=l];
+c157 [type=c];
+c29 [type=c];
+c386 [type=c];
+c4 [type=c];
+l1234 -- c157;
+l1234 -- c29;
+l1234 -- c386;
+l1234 -- c4;
+l56 -- c157;
+l56 -- c386;
+l78 -- c157;
+l78 -- c386;
+l9 -- c29;
+}

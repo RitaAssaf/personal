@@ -1,0 +1,44 @@
+digraph G {
+1 [label=1];
+2 [label=2];
+3 [label=3];
+4 [label=4];
+5 [label=5];
+6 [label=6];
+7 [label=7];
+8 [label=8];
+9 [label=9];
+1 -> 2 [angle=0];
+2 -> 3 [angle=0];
+4 -> 5 [angle=0];
+5 -> 6 [angle=0];
+7 -> 8 [angle=0];
+8 -> 9 [angle=0];
+1 -> 4 [angle=90];
+4 -> 7 [angle=90];
+2 -> 5 [angle=90];
+5 -> 8 [angle=90];
+3 -> 6 [angle=90];
+6 -> 9 [angle=90];
+subgraph {
+rank=same;
+1;
+2;
+3;
+}
+
+subgraph {
+rank=same;
+4;
+5;
+6;
+}
+
+subgraph {
+rank=same;
+7;
+8;
+9;
+}
+
+}

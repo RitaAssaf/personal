@@ -1,0 +1,6 @@
+<instance format="XCSP3" type="CSP">
+  <variables>
+    <array id="I" size="[5]"> 1..9 </array>
+    <array id="aux_gb" note="aux_gb[i] is the ith auxiliary variable having been automatically introduced" size="[10]"> 0 1 </array>
+  </variables>
+</instance>

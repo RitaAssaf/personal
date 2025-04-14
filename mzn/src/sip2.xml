@@ -1,0 +1,8 @@
+<instance format="XCSP3" type="CSP">
+  <variables>
+    <array id="I" note="Decision variable I[v] -&gt; maps node v in the pattern graph to a node in the target graph" size="[3]"> 1..25 </array>
+  </variables>
+  <constraints>
+    <allDifferent> I[] </allDifferent>
+  </constraints>
+</instance>

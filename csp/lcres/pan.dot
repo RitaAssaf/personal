@@ -1,0 +1,23 @@
+strict graph {
+    0 [type=l, nom="0", label="0", preceds="1,2"];
+    1 [type=l, nom="1", label="1",  preceds="2"];
+    2 [type=l, nom="2", label="2", preceds=""];
+    3 [type=c, nom="3", label="3",  preceds="4"];
+    4 [type=c, nom="4", label="4",  preceds=""];
+
+
+    0 -- 4;
+    0 -- 3;
+    1 -- 4;
+
+    1 -- 3;
+    2 -- 3;
+     // Ensure horizontal order
+    { rank=same; 0 1 2 }
+    { rank=same; 3 4 }
+
+    // Invisible edges to enforce left-to-right order
+    0 -- 1 [style=invis];
+    1 -- 2 [style=invis];
+    3 -- 4 [style=invis];
+}

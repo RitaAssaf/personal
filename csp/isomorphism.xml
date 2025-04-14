@@ -1,0 +1,22 @@
+<instance format="XCSP3" type="CSP">
+  <variables>
+    <array id="I" note="Mapping nodes from graph 1 to graph 2" size="[4]"> 1..9 </array>
+  </variables>
+  <constraints>
+    <allDifferent> I[] </allDifferent>
+    <group note="preserving edges">
+      <extension>
+        <list> %0 %1 </list>
+        <supports> (1,2)(1,4)(2,1)(2,3)(2,5)(3,2)(3,6)(4,1)(4,5)(4,7)(5,2)(5,4)(5,6)(5,8)(6,3)(6,5)(6,9)(7,4)(7,8)(8,5)(8,7)(8,9)(9,6)(9,8) </supports>
+      </extension>
+      <args> I[1] I[2] </args>
+      <args> I[1] I[0] </args>
+      <args> I[2] I[1] </args>
+      <args> I[2] I[3] </args>
+      <args> I[3] I[2] </args>
+      <args> I[3] I[0] </args>
+      <args> I[0] I[1] </args>
+      <args> I[0] I[3] </args>
+    </group>
+  </constraints>
+</instance>

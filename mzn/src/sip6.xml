@@ -1,0 +1,20 @@
+<instance format="XCSP3" type="CSP">
+  <variables>
+    <array id="I" note="Map each vertex in the pattern graph to a vertex in the target graph" size="[5]"> 1..9 </array>
+  </variables>
+  <constraints>
+    <allDifferent note="Map all nodes from graph 1"> I[] </allDifferent>
+    <group note="Found a mapping from the edge in graph 1 to an edge in graph 2, with angle(e1) = angle(e2) - Each edges of graph 1 has a mapping in graph 2 (I*(E1) subset E2), with angle(e1) = angle(e2)">
+      <count>
+        <list> %... </list>
+        <values> 1 </values>
+        <condition> (ge,1) </condition>
+      </count>
+      <args> and(eq(I[1],1),eq(I[2],2)) and(eq(I[1],2),eq(I[2],1)) and(eq(I[1],1),eq(I[2],4)) and(eq(I[1],4),eq(I[2],1)) and(eq(I[1],2),eq(I[2],3)) and(eq(I[1],3),eq(I[2],2)) and(eq(I[1],2),eq(I[2],5)) and(eq(I[1],5),eq(I[2],2)) and(eq(I[1],3),eq(I[2],6)) and(eq(I[1],6),eq(I[2],3)) and(eq(I[1],4),eq(I[2],5)) and(eq(I[1],5),eq(I[2],4)) and(eq(I[1],4),eq(I[2],7)) and(eq(I[1],7),eq(I[2],4)) and(eq(I[1],5),eq(I[2],6)) and(eq(I[1],6),eq(I[2],5)) and(eq(I[1],5),eq(I[2],8)) and(eq(I[1],8),eq(I[2],5)) and(eq(I[1],6),eq(I[2],9)) and(eq(I[1],9),eq(I[2],6)) and(eq(I[1],7),eq(I[2],8)) and(eq(I[1],8),eq(I[2],7)) and(eq(I[1],8),eq(I[2],9)) and(eq(I[1],9),eq(I[2],8)) </args>
+      <args> and(eq(I[1],1),eq(I[4],2)) and(eq(I[1],2),eq(I[4],1)) and(eq(I[1],1),eq(I[4],4)) and(eq(I[1],4),eq(I[4],1)) and(eq(I[1],2),eq(I[4],3)) and(eq(I[1],3),eq(I[4],2)) and(eq(I[1],2),eq(I[4],5)) and(eq(I[1],5),eq(I[4],2)) and(eq(I[1],3),eq(I[4],6)) and(eq(I[1],6),eq(I[4],3)) and(eq(I[1],4),eq(I[4],5)) and(eq(I[1],5),eq(I[4],4)) and(eq(I[1],4),eq(I[4],7)) and(eq(I[1],7),eq(I[4],4)) and(eq(I[1],5),eq(I[4],6)) and(eq(I[1],6),eq(I[4],5)) and(eq(I[1],5),eq(I[4],8)) and(eq(I[1],8),eq(I[4],5)) and(eq(I[1],6),eq(I[4],9)) and(eq(I[1],9),eq(I[4],6)) and(eq(I[1],7),eq(I[4],8)) and(eq(I[1],8),eq(I[4],7)) and(eq(I[1],8),eq(I[4],9)) and(eq(I[1],9),eq(I[4],8)) </args>
+      <args> and(eq(I[2],1),eq(I[3],2)) and(eq(I[2],2),eq(I[3],1)) and(eq(I[2],1),eq(I[3],4)) and(eq(I[2],4),eq(I[3],1)) and(eq(I[2],2),eq(I[3],3)) and(eq(I[2],3),eq(I[3],2)) and(eq(I[2],2),eq(I[3],5)) and(eq(I[2],5),eq(I[3],2)) and(eq(I[2],3),eq(I[3],6)) and(eq(I[2],6),eq(I[3],3)) and(eq(I[2],4),eq(I[3],5)) and(eq(I[2],5),eq(I[3],4)) and(eq(I[2],4),eq(I[3],7)) and(eq(I[2],7),eq(I[3],4)) and(eq(I[2],5),eq(I[3],6)) and(eq(I[2],6),eq(I[3],5)) and(eq(I[2],5),eq(I[3],8)) and(eq(I[2],8),eq(I[3],5)) and(eq(I[2],6),eq(I[3],9)) and(eq(I[2],9),eq(I[3],6)) and(eq(I[2],7),eq(I[3],8)) and(eq(I[2],8),eq(I[3],7)) and(eq(I[2],8),eq(I[3],9)) and(eq(I[2],9),eq(I[3],8)) </args>
+      <args> and(eq(I[3],1),eq(I[4],2)) and(eq(I[3],2),eq(I[4],1)) and(eq(I[3],1),eq(I[4],4)) and(eq(I[3],4),eq(I[4],1)) and(eq(I[3],2),eq(I[4],3)) and(eq(I[3],3),eq(I[4],2)) and(eq(I[3],2),eq(I[4],5)) and(eq(I[3],5),eq(I[4],2)) and(eq(I[3],3),eq(I[4],6)) and(eq(I[3],6),eq(I[4],3)) and(eq(I[3],4),eq(I[4],5)) and(eq(I[3],5),eq(I[4],4)) and(eq(I[3],4),eq(I[4],7)) and(eq(I[3],7),eq(I[4],4)) and(eq(I[3],5),eq(I[4],6)) and(eq(I[3],6),eq(I[4],5)) and(eq(I[3],5),eq(I[4],8)) and(eq(I[3],8),eq(I[4],5)) and(eq(I[3],6),eq(I[4],9)) and(eq(I[3],9),eq(I[4],6)) and(eq(I[3],7),eq(I[4],8)) and(eq(I[3],8),eq(I[4],7)) and(eq(I[3],8),eq(I[4],9)) and(eq(I[3],9),eq(I[4],8)) </args>
+      <args> and(eq(I[4],1),eq(I[0],2)) and(eq(I[4],2),eq(I[0],1)) and(eq(I[4],1),eq(I[0],4)) and(eq(I[4],4),eq(I[0],1)) and(eq(I[4],2),eq(I[0],3)) and(eq(I[4],3),eq(I[0],2)) and(eq(I[4],2),eq(I[0],5)) and(eq(I[4],5),eq(I[0],2)) and(eq(I[4],3),eq(I[0],6)) and(eq(I[4],6),eq(I[0],3)) and(eq(I[4],4),eq(I[0],5)) and(eq(I[4],5),eq(I[0],4)) and(eq(I[4],4),eq(I[0],7)) and(eq(I[4],7),eq(I[0],4)) and(eq(I[4],5),eq(I[0],6)) and(eq(I[4],6),eq(I[0],5)) and(eq(I[4],5),eq(I[0],8)) and(eq(I[4],8),eq(I[0],5)) and(eq(I[4],6),eq(I[0],9)) and(eq(I[4],9),eq(I[0],6)) and(eq(I[4],7),eq(I[0],8)) and(eq(I[4],8),eq(I[0],7)) and(eq(I[4],8),eq(I[0],9)) and(eq(I[4],9),eq(I[0],8)) </args>
+    </group>
+  </constraints>
+</instance>

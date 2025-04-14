@@ -1,0 +1,16 @@
+<instance format="XCSP3" type="CSP">
+  <variables>
+    <array id="mapping" note="Decision variables: mapping[i] = j means node i in pattern is mapped to node j in target" size="[3]"> 0..3 </array>
+  </variables>
+  <constraints>
+    <allDifferent> mapping[] </allDifferent>
+    <group>
+      <extension>
+        <list> %0 %1 </list>
+        <supports> (0,1)(0,2)(1,0)(1,3)(2,0)(2,3)(3,1)(3,2) </supports>
+      </extension>
+      <args> mapping[0] mapping[1] </args>
+      <args> mapping[1] mapping[2] </args>
+    </group>
+  </constraints>
+</instance>
